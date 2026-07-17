@@ -1,7 +1,6 @@
 const API_URL = "https://api.football-data.org/v4";
-const API_KEY = "addb266487f24b01aec93fc7e48013c9"; // replace with your key
 
-export async function fetchUpcomingMatches(competition = "WC") {
+export async function fetchUpcomingMatches(competition = "PL") {
   try {
     const res = await fetch(
       `${API_URL}/competitions/${competition}/matches?status=SCHEDULED`,

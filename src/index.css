@@ -109,3 +109,8 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+.clean-table-container {
+    display: table !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}

@@ -7,7 +7,6 @@ const API_KEY = process.env.FOOTBALL_API_KEY; // use env variable
 
 async function fetchMatches() {
   try {
-    console.log("API Key:", API_KEY);
     const res = await fetch(
       `${API_URL}/competitions/PL/matches?status=SCHEDULED`,
       {
